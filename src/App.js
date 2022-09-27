@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Container } from './AppStyles';
 import Name from './Name/Name';
+import { sortByLastName } from './utils';
 
 const NAME_LIST = [
   {
@@ -54,26 +55,10 @@ const NAME_LIST = [
 function App() {
   const [sortedList, setSortedList] = useState([]);
 
-  const sortByLastName = (nameList, sort) => {
-    const sortedNameList = nameList.sort((prevEl, el) => {
-      if(prevEl.last_name < el.last_name) {
-        return sort === "desc" ? 1 : -1;
-      } else if (prevEl.last_name === el.last_name) {
-        return 0;
-      } else 
-      return sort === "desc" ? -1 : 1;
-    })
-
-    return sortedNameList;
-  };
-
   useEffect(() => {
     setSortedList(sortByLastName(NAME_LIST, "desc"));
   },
-  [NAME_LIST]);
-
-  console.log("sortedList");
-  console.log(sortedList);
+  []);
 
   const renderNames = (list) => {
     return list.map(name => {
