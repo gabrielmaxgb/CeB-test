@@ -10,3 +10,8 @@ export const sortByLastName = (nameList, sort) => {
 
   return sortedNameList;
 };
+
+export const getFibonacci = (num) => {
+  if (num <= 1) return num;
+  return getFibonacci(num - 1) + getFibonacci(num - 2);
+}

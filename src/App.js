@@ -61,12 +61,11 @@ function App() {
   []);
 
   const renderNames = (list) => {
-    return list.map(name => {
+    return list.map((name, index) => {
       return (
-        <Name name={name} />
+        <Name name={name} key={index} />
       );
     });
-
   };
 
   return (
