@@ -1,70 +1,113 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## CORBIN & BROOKS SOFTWARE DEVELOPER ASSESSMENT TEST 2022
+​
+Dear candidate,
+​
+Welcome to our Software Development Assessment Test. Please read the following information carefully as well as all the questions before moving on to solving any of them.
+​
+### Considerations:
+- Using a markdown plugin or tool makes this document look better.
+- You are free to use any environment you feel most comfortable with.
+- You are free to google anything.
+- You can use this sandbox https://codesandbox.io/s/new or a local environment if preferred
+​
+​
+Ok, here we go:
+​
+Please create a new react app and solve the following statements:
+​
+Using the following array:
+​
+```
+ [
+   {
+     name: "Albert",
+     last_name: "Einstein",
+     timeout: 10
+   },
+   {
+     name: "Elon",
+     last_name: "Musk",
+     timeout: 15
+   },
+   {
+     name: "Erwin",
+     last_name: "Schrödinger",
+     timeout: 12
+   },
+   {
+     name: "Isaac",
+     last_name: "Newton",
+     timeout: 18
+   },
+   {
+     name: "Nikola",
+     last_name: "Tesla",
+     timeout: 20
+     },
+   {
+     name: "Marie",
+     last_name: "Curie",
+     timeout: 14
+   },
+   {
+     name: "Werner",
+     last_name: "Heisenberg",
+     timeout: 16
+   },
+   {
+     name: "Niels",
+     last_name: "Bohr",
+     timeout: 19
+   },
+   {
+     name: "Robert",
+     last_name: "Oppenheimer",
+     timeout: 20
+   },
+ ];
+```
+​
+1. Sort the list by last name in a descending order and filter every third name out of the list.
+​
+2. Use the names you filtered out on the previous question and show each one of them on the screen for the amount of seconds specified in the timeout attribute.
+​
+Example:
+```
+   [
+     {
+       name: "Robert",
+       last_name: "Oppenheimer",
+       timeout: 20
+     },
+     {
+       name: "Werner",
+       last_name: "Heisenberg",
+       timeout: 16
+     },
+     {
+       name: "Niels",
+       last_name: "Bohr",
+       timeout: 19
+     },
+ ];
+```
+​
+In this case the name Robert Oppenheimer should be on the screen for 10 seconds and disappear, then show Werner Heisenberg for 18 seconds, disappear and then Niels Bohr for 20 seconds, disappear and then repeat.
+​
+3. Calculate the Fibonnaci number of N efficiently using a recursive function. The Fibonacci Sequence is a set of numbers such that each number in the sequence is the sum of the two numbers that immediatly preceed it.
+​
+I.E:
+The fibonacci number of 0 = 0
+The fibonacci number of 1 = 1
+The fibonacci number of 2 = 1
+The fibonnaci number of 3 = 2
+The fibonnaci number of 4 = 3
+The fibonnaci number of 5 = 5
+The fibonnaci number of 6 = 8
+.
+.
+.
+​
+Expected Time Complexity = O(N)
+​
+```
